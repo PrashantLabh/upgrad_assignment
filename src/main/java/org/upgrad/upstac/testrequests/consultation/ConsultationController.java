@@ -109,8 +109,6 @@ public class ConsultationController {
         }
     }
 
-`
-
     @PreAuthorize("hasAnyRole('DOCTOR')")
     @PutMapping("/update/{id}")
     public TestRequest updateConsultation(@PathVariable Long id,@RequestBody CreateConsultationRequest testResult) {
